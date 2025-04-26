@@ -1,0 +1,32 @@
+--- input.md	2025-04-26 11:01:04.119044767 -0400
++++ output.md	2025-04-26 11:04:27.902031338 -0400
+@@ -6,19 +6,19 @@
+     * Banana
+     * Cherry
+ 
+-w | x | y | z
+----|:---|---:|:---:
+-1 | 1 | 1 | 1
+-2 | 4 | 16 | 256
+-3 | 9 | 81 | 6561
+-4 | 16 | 256 | 65536
++| w  | x  |   y |   z   |
++|----|:---|----:|:-----:|
++| 1  | 1  |   1 |   1   |
++| 2  | 4  |  16 |  256  |
++| 3  | 9  |  81 | 6561  |
++| 4  | 16 | 256 | 65536 |
+ 
+ ## Heading
+ 
+-Link | Description
+----|---
+-**[Google](https://google.com/)** | **Search Engine**
+-[Wikipedia](https://wikipedia.org/) | Free Encyclopedia
++| Link                                | Description       |
++|-------------------------------------|-------------------|
++| **[Google](https://google.com/)**   | **Search Engine** |
++| [Wikipedia](https://wikipedia.org/) | Free Encyclopedia |
+ 
+ Paragraph with a [link](https://somewhere.com) and **formatting**.
+ 
