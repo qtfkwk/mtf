@@ -1,4 +1,27 @@
-Markdown Table Formatter
+# Markdown Table Formatter
+
+## CLI
+
+```text
+$ cat table.md
+w | x | y | z
+---|:---|---:|:---:
+1 | 1 | 1 | 1
+2 | 4 | 16 | 256
+3 | 9 | 81 | 6561
+4 | 16 | 256 | 65536
+
+$ mtf table.md
+| w  | x  |   y |   z   |
+|----|:---|----:|:-----:|
+| 1  | 1  |   1 |   1   |
+| 2  | 4  |  16 |  256  |
+| 3  | 9  |  81 | 6561  |
+| 4  | 16 | 256 | 65536 |
+
+```
+
+## Library
 
 ```rust
 let input = "\

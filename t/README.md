@@ -1,4 +1,15 @@
-Markdown Table Formatter
+# Markdown Table Formatter
+
+## CLI
+
+```text
+$ cat table.md
+!run:cat ../table.md
+$ mtf table.md
+!run:../target/release/mtf ../table.md
+```
+
+## Library
 
 ```rust
 let input = "\\
