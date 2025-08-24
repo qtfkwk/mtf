@@ -9,6 +9,15 @@ $ mtf table.md
 !run:../target/release/mtf ../table.md
 ```
 
+## Text Editor
+
+1. Use a text editor (Vim, NeoVim, Helix Editor, ...)
+2. Select Markdown table content in a file
+   (in Helix Editor type `␛x` then `x` repeatedly, or type `␛v` then hjkl or arrows)
+3. Pass it as input to `mtf`
+   (in Helix Editor type `|mtf⏎`)
+4. `mtf` formats the table content
+
 ## Library
 
 ```rust
