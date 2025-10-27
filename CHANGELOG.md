@@ -5,4 +5,5 @@
 * 0.3.0 (2025-05-10): Read from stdin if no input files or input file is `-`; update dependencies
     * 0.3.1 (2025-08-24): Add note about usage in a text editor to readme; update dependencies
     * 0.3.2 (2025-09-02): Update dependencies
+    * 0.3.3 (2025-10-27): Update dependencies
 
