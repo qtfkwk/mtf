@@ -1,22 +1,13 @@
 use {
     anyhow::{Result, anyhow},
-    clap::{Parser, builder::Styles},
-    clap_cargo::style::*,
-    mtf::*,
+    clap::Parser,
+    clap_cargo::style::CLAP_STYLING,
+    mtf::process,
     std::path::PathBuf,
 };
 
-const STYLES: Styles = Styles::styled()
-    .header(HEADER)
-    .usage(USAGE)
-    .literal(LITERAL)
-    .placeholder(PLACEHOLDER)
-    .error(ERROR)
-    .valid(VALID)
-    .invalid(INVALID);
-
 #[derive(Parser)]
-#[command(about, version, max_term_width = 80, styles = STYLES)]
+#[command(about, version, max_term_width = 80, styles = CLAP_STYLING)]
 struct Args {
     /// Input file(s)
     #[arg(value_name = "PATH")]

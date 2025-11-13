@@ -6,4 +6,7 @@
     * 0.3.1 (2025-08-24): Add note about usage in a text editor to readme; update dependencies
     * 0.3.2 (2025-09-02): Update dependencies
     * 0.3.3 (2025-10-27): Update dependencies
+    * 0.3.4 (2025-11-13): Update dependencies; use [`clap-cargo`] `CLAP_STYLING`; clippy fixes
+
+[`clap-cargo`]: https://crates.io/crates/clap-cargo
 

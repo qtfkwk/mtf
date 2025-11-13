@@ -2,12 +2,19 @@
 
 use {
     anyhow::Result,
-    gstring::*,
+    gstring::GString,
     pulldown_cmark::{self as pd, Alignment},
     std::fmt::Write,
 };
 
-/// Process markdown content
+/**
+Process markdown content
+
+# Errors
+
+Returns an error if not able to process the given input `&str`
+*/
+#[allow(clippy::missing_panics_doc)]
 pub fn process(input: &str) -> Result<String> {
     let mut s = String::new();
 
@@ -31,7 +38,7 @@ pub fn process(input: &str) -> Result<String> {
                 column = 0;
                 depth += 1;
             }
-            pd::Event::Start(pd::Tag::TableHead) | pd::Event::Start(pd::Tag::TableRow) => {
+            pd::Event::Start(pd::Tag::TableHead | pd::Tag::TableRow) => {
                 // Start a new table row
                 table.push(vec![]);
             }
@@ -55,7 +62,7 @@ pub fn process(input: &str) -> Result<String> {
                 let i = column - 1;
                 widths[i] = widths[i].max(source.len());
             }
-            pd::Event::End(pd::TagEnd::TableHead) | pd::Event::End(pd::TagEnd::TableRow) => {
+            pd::Event::End(pd::TagEnd::TableHead | pd::TagEnd::TableRow) => {
                 // Reset the column index at end of table row
                 column = 0;
             }
