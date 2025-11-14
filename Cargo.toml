@@ -1,6 +1,6 @@
 [package]
 name = "mtf"
-version = "0.3.4"
+version = "0.3.5"
 edition = "2024"
 description = "Markdown Table Formatter"
 license = "MIT"
@@ -10,5 +10,5 @@ repository = "https://github.com/qtfkwk/mtf"
 anyhow = "1.0.100"
 clap = { version = "4.5.51", features = ["derive", "wrap_help"] }
 clap-cargo = "0.18.3"
-gstring = "0.13.1"
+gstring = "0.13.2"
 pulldown-cmark = "0.13.0"

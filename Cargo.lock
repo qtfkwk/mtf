@@ -142,9 +142,9 @@ dependencies = [
 
 [[package]]
 name = "gstring"
-version = "0.13.1"
+version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "341d8456ebc30028b87024e272117fc36b31ca8f6e2e98493e5c9cab8c2365fe"
+checksum = "20d47c36a653477a134429a1c2caf7b961c8f42c3c65ab3ba80d563650177f03"
 dependencies = [
  "anyhow",
  "serde",
@@ -183,7 +183,7 @@ checksum = "f52b00d39961fc5b2736ea853c9cc86238e165017a493d1d5c8eac6bdc4cc273"
 
 [[package]]
 name = "mtf"
-version = "0.3.4"
+version = "0.3.5"
 dependencies = [
  "anyhow",
  "clap",
