@@ -10,6 +10,7 @@
     * 0.3.5 (2025-11-14): Update dependencies; fix changelog
     * 0.3.6 (2026-03-03): Update dependencies
     * 0.3.7 (2026-04-15): Update dependencies
+    * 0.3.8 (2026-04-17): Update dependencies
 
 [`clap-cargo`]: https://crates.io/crates/clap-cargo
 
